@@ -21,6 +21,8 @@
 - [Day 24](#day-24)
   - [Exercises](#exercises)
     - [Exercise: Level 1](#exercise-level-1)
+  - [Added Activity](#added-activity)
+    - [Applied Lab (r54-t041)](#applied-lab-r54-t041)
 
 # Day 24
 
@@ -31,6 +33,18 @@
 1. Develop a small application which calculate a weight of an object in a certain planet. The gif image is not complete check the video in the starter file.
 
 ![Solar System](./../images/projects/dom_min_project_solar_system_day_4.1.gif)
+
+## Added Activity
+
+### Applied Lab (r54-t041)
+
+- **Lab**: [Celsius to Fahrenheit Converter Applied Lab](./applied-labs/r54-t041/README.md)
+- **Inputs & Expected Results**:
+  - Input `0` (°C) → Expected Result: `32` (°F)
+  - Input `100` (°C) → Expected Result: `212` (°F)
+  - Input `-40` (°C) → Expected Result: `-40` (°F)
+  - Blank input → Accessible validation error (`role="alert"`, `aria-live="polite"`, `aria-invalid="true"`)
+- **Contribution Focus**: Implement the required behavior from the explicit contract; show the smallest useful complete example.
 
 🎉 CONGRATULATIONS ! 🎉
 
