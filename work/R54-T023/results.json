@@ -1,0 +1,71 @@
+{
+  "contributionFocus": "Inject time, storage, events or network where used; use repeatable local fixtures and show that two isolated runs agree.",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "os": "Darwin 25.6.0 (arm64)",
+    "timestamp": "2026-11-17T18:47:31.813Z"
+  },
+  "summary": {
+    "totalTests": 7,
+    "passed": 7,
+    "failed": 0
+  },
+  "tests": [
+    {
+      "id": "update_id_2_changes_only_target",
+      "description": "Updating id=2 applies updates and gives a new object reference for record 2",
+      "input": "id=2, updates={ name: \"Beta Updated\", status: \"active\", count: 99 }",
+      "expected": "Record id=2 updated with new fields and timestamp; new array reference",
+      "actual": "Record 2 updated: name=\"Beta Updated\", status=\"active\", count=99",
+      "passed": true
+    },
+    {
+      "id": "unaffected_references_preserved",
+      "description": "Records not matching the target ID preserve original memory references",
+      "input": "id=2, check references for id=1 and id=3",
+      "expected": "result[0] === fixture[0] and result[2] === fixture[2]",
+      "actual": "Both unaffected object references strictly identical (===)",
+      "passed": true
+    },
+    {
+      "id": "original_values_remain_intact",
+      "description": "Original input array items remain completely unchanged after operation",
+      "input": "Inspect original fixture after updateItemById call",
+      "expected": "fixture[1].name === \"Beta\", fixture[1].status === \"pending\"",
+      "actual": "Original record 2: name=\"Beta\", status=\"pending\"",
+      "passed": true
+    },
+    {
+      "id": "absent_id_leaves_contents_equivalent",
+      "description": "Updating a nonexistent ID leaves contents equivalent and original items untouched",
+      "input": "id=999 (absent from fixture)",
+      "expected": "Contents equivalent to original array; all element references retained",
+      "actual": "Result array deep equals original fixture; all element references identical",
+      "passed": true
+    },
+    {
+      "id": "two_isolated_runs_agree",
+      "description": "Two isolated runs with deterministic fixture and injected clock produce identical output",
+      "input": "Two isolated runs on separate deterministic fixtures with mockClock",
+      "expected": "deepStrictEqual(runA, runB) === true",
+      "actual": "Both runs produce 100% identical outputs",
+      "passed": true
+    },
+    {
+      "id": "dependency_injection_events_and_storage",
+      "description": "Injected clock, storage, and event callbacks execute predictably",
+      "input": "Injected clock, storage mock, onEvent handler",
+      "expected": "Event emitted with type ITEM_UPDATED; storage.save called with result",
+      "actual": "Events recorded: 1, Storage saved: true",
+      "passed": true
+    },
+    {
+      "id": "input_validation_type_error",
+      "description": "Rejects invalid non-array input with a TypeError",
+      "input": "items = \"not an array\"",
+      "expected": "TypeError: First argument must be an array",
+      "actual": "Throws TypeError as expected",
+      "passed": true
+    }
+  ]
+}
