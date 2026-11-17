@@ -35,6 +35,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t024)](#applied-lab-r54-t024)
 
 # Day 11
 
@@ -692,6 +694,16 @@ const users = [
   }
 
 ```
+
+## Added Activity
+
+### Applied Lab (r54-t024)
+
+- **Lab**: [Destructured Configuration & State Invariant Applied Lab](./applied-labs/r54-t024/README.md)
+- **Inputs & Expected Results**:
+  - Input `defaults = { limit: 10, enabled: true }`, `overrides = { limit: 0, enabled: false }` → Expected Result: `{ limit: 0, enabled: false }` (preserves both falsy overrides without falling back to defaults).
+  - Sequence of updates (`{ limit: 0, enabled: false }` → `{ timeout: 0 }` → `{ enabled: true }`) → Expected Result: State invariant holds across every transition; falsy values (`0`, `false`, `""`) are strictly preserved.
+- **Contribution Focus**: State and test the invariant connecting input/state to output across a short sequence of operations.
 
 🎉 CONGRATULATIONS ! 🎉
 
