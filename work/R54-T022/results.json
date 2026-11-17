@@ -1,0 +1,71 @@
+{
+  "contributionFocus": "Concentrate on the stated boundary and invalid/empty-input behavior; explain the exact boundary condition in the lesson.",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "os": "Darwin 25.6.0 (arm64)",
+    "timestamp": "2026-11-17T18:04:12.327Z"
+  },
+  "summary": {
+    "totalTests": 7,
+    "passed": 7,
+    "failed": 0
+  },
+  "tests": [
+    {
+      "id": "explicit_en_language",
+      "description": "name=Ada, language=en produces \"Hello, Ada!\"",
+      "input": "{\"name\":\"Ada\",\"language\":\"en\"}",
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "omitted_language_default",
+      "description": "Omitted language parameter defaults to \"en\"",
+      "input": "{\"name\":\"Ada\"}",
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "blank_name_empty_string",
+      "description": "Zero-length empty string name is rejected",
+      "input": "{\"name\":\"\",\"language\":\"en\"}",
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error: Name cannot be blank",
+      "passed": true
+    },
+    {
+      "id": "blank_name_whitespace",
+      "description": "Whitespace-only string name is rejected after trimming",
+      "input": "{\"name\":\"   \",\"language\":\"en\"}",
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error: Name cannot be blank",
+      "passed": true
+    },
+    {
+      "id": "type_boundary_non_string",
+      "description": "Non-string values (null, undefined) are rejected with TypeError",
+      "input": "name = null, name = undefined",
+      "expected": "TypeError: Name must be a string",
+      "actual": "Both null and undefined throw TypeError as expected",
+      "passed": true
+    },
+    {
+      "id": "alternate_supported_language",
+      "description": "Specifying alternate language code (\"es\") formats greeting appropriately",
+      "input": "{\"name\":\"Ada\",\"language\":\"es\"}",
+      "expected": "Hola, Ada!",
+      "actual": "Hola, Ada!",
+      "passed": true
+    },
+    {
+      "id": "unsupported_language_code",
+      "description": "Unsupported language codes throw a descriptive error",
+      "input": "{\"name\":\"Ada\",\"language\":\"unsupported_code\"}",
+      "expected": "Error containing \"Unsupported language\"",
+      "actual": "Error: Unsupported language 'unsupported_code'. Supported languages: en, es, fr, de",
+      "passed": true
+    }
+  ]
+}

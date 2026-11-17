@@ -38,6 +38,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t022)](#applied-lab-r54-t022)
 
 # 📔 Day 7
 
@@ -702,6 +704,23 @@ It Will be covered in other section.
     ```
 
 1. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+## Added Activity
+
+### Applied Lab (r54-t022)
+
+- **Lab**: [Function Defaults and Boundary Validation Applied Lab](./applied-labs/r54-t022/README.md)
+- **Inputs & Expected Results**:
+  - Input `name = 'Ada'`, `language = 'en'` → Expected Result: `'Hello, Ada!'`
+  - Input `name = 'Ada'`, `language` omitted → Expected Result: `'Hello, Ada!'` (defaults to `'en'`)
+  - Input `name = ''` (empty string) → Rejected (`Error: Name cannot be blank`)
+  - Input `name = '   '` (whitespace-only string) → Rejected (`Error: Name cannot be blank`)
+  - Input `name = null` / `undefined` (non-string type) → Rejected (`TypeError: Name must be a string`)
+- **Contribution Focus**: Concentrate on the stated boundary and invalid/empty-input behavior; explain the exact boundary condition in the lesson.
+  - **Exact Boundary Conditions Explained**:
+    1. *Empty String Boundary*: A string of length 0 (`""`) contains no characters and is strictly rejected.
+    2. *Whitespace Boundary*: Strings containing only whitespace (`"   "`, `"\t"`, `"\n"`) trim to 0 characters and must not be accepted as valid names.
+    3. *Type Boundary*: Only primitive string values are valid name arguments; non-string types (`null`, `undefined`, numbers, objects) violate preconditions and are rejected with a `TypeError`.
 
 🎉 CONGRATULATIONS ! 🎉
 
