@@ -47,6 +47,8 @@
 		- [Exercise: Level 1](#exercise-level-1)
 		- [Exercise: Level 2](#exercise-level-2)
 		- [Exercise: Level 3](#exercise-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t023)](#applied-lab-r54-t023)
 
 # 📔 Day 5
 
@@ -769,6 +771,17 @@ const webTechs = [
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 2. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
   
+## Added Activity
+
+### Applied Lab (r54-t023)
+
+- **Lab**: [Immutable Array Update by ID Applied Lab](./applied-labs/r54-t023/README.md)
+- **Inputs & Expected Results**:
+  - Input array with items `[id=1, id=2, id=3]`, updating `id = 2` → Expected Result: Only record `id = 2` is updated with new object reference; original array and records `id = 1` and `id = 3` retain identical memory references (`===`).
+  - Input array, updating nonexistent `id = 999` → Expected Result: Contents remain equivalent to original array; no items altered.
+  - Repeatable fixture with injected mock clock → Expected Result: Two isolated runs agree identically (`deepStrictEqual`).
+- **Contribution Focus**: Inject time, storage, events or network where used; use repeatable local fixtures and show that two isolated runs agree.
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 4](../04_Day_Conditionals/04_day_Conditionals.md) | [Day 6 >>](../06_Day_Loops/06_day_loops.md)
