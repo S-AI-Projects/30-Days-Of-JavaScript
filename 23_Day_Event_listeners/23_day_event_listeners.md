@@ -31,6 +31,8 @@
 			- [keypress, keydow and keyup](#keypress-keydow-and-keyup)
 	- [Exercises](#exercises)
 		- [Exercise: Level 1](#exercise-level-1)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t021)](#applied-lab-r54-t021)
 
 # Day 22
 
@@ -326,6 +328,18 @@ We can access all the key numbers of the keyboard using different event listener
 1. Generating the keyboard code code using even listener. The image below.
 
 ![Keyboard key](./../images/projects/dom_min_project_keycode_day_3.2.gif)
+
+## Added Activity
+
+### Applied Lab (r54-t021)
+
+- **Lab**: [Event Lifecycle and Keyboard Activation Applied Lab](./applied-labs/r54-t021/README.md)
+- **Inputs & Expected Results**:
+  - One click on `#increment-btn` → Count increments by 1 (`0 -> 1`)
+  - Keyboard activation (`Enter` / `Space` keys on `#increment-btn`) → Count increments by 1
+  - Remounting listener → Does not duplicate event handlers (single increment per click)
+  - Cleanup listener (`#cleanup-btn`) → Removes event listener and prevents further updates upon click or keyboard
+- **Contribution Focus**: Implement the required behavior from the explicit contract; show the smallest useful complete example.
 
 🎉 CONGRATULATIONS ! 🎉
 
