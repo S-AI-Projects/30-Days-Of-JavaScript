@@ -28,6 +28,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t038)](#applied-lab-r54-t038)
 
 # 📔 Day 4
 
@@ -370,6 +372,18 @@ isRaining
   ```
 
 1. Write a program which tells the number of days in a month, now consider leap year.
+
+## Added Activity
+
+### Applied Lab (r54-t038)
+
+- **Lab**: [Score Classification with Failure & Recovery Applied Lab](./applied-labs/r54-t038/README.md)
+- **Inputs & Expected Results**:
+  - Score `< 40` (e.g. `39`) → Expected Result: `'fail'`
+  - Score `40..74` (e.g. `40`, `74`) → Expected Result: `'pass'`
+  - Score `75..100` (e.g. `75`, `100`) → Expected Result: `'distinction'`
+  - Score outside `0..100` (e.g. `-1`, `101`, `null`) → Expected Result: Rejection with error, followed by immediate recovery on next valid input without restarting session.
+- **Contribution Focus**: Demonstrate the stated error or empty state, then a successful recovery on the next valid input without restarting the example.
 
 
 🎉 CONGRATULATIONS ! 🎉
