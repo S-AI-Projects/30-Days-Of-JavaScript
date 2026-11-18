@@ -23,6 +23,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t032)](#applied-lab-r54-t032)
 
 # Day 19
 
@@ -98,6 +100,17 @@ console.log(innerFuncs.minusOne)
 ### Exercises: Level 3
 
 1. Create a personAccount out function. It has firstname, lastname, incomes, expenses  inner variables. It has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance inner functions. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+
+## Added Activity
+
+### Applied Lab (r54-t032)
+
+- **Lab**: [Closure Isolation & Boundary Validation Applied Lab](./applied-labs/r54-t032/README.md)
+- **Inputs & Expected Results**:
+  - Increment Counter A twice → Expected Result: Counter A value is `2`, Counter B remains `0` (enclosed lexical state, zero global variable leakage).
+  - Empty or invalid step input (`""`, `"-5"`, `"abc"`) → Expected Result: Explicit boundary rejection with descriptive error, preserving counter value without modification.
+  - Subsequent valid step (`"3"`) → Expected Result: Error cleared, counter increments correctly.
+- **Contribution Focus**: Concentrate on the stated boundary and invalid/empty-input behavior; explain the exact boundary condition in the lesson.
 
 🎉 CONGRATULATIONS ! 🎉
 
