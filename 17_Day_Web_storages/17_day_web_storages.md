@@ -31,6 +31,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t025)](#applied-lab-r54-t025)
 
 # Day 17
 
@@ -227,6 +229,17 @@ localStorage.clear()
 ### Exercises: Level 3
 
 1. Create an object called personAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+
+## Added Activity
+
+### Applied Lab (r54-t025)
+
+- **Lab**: [Versioned Local Storage & Graceful Recovery Applied Lab](./applied-labs/r54-t025/README.md)
+- **Inputs & Expected Results**:
+  - Valid stored object `{ version: 1, theme: 'dark' }` → Expected Result: Dark theme successfully reloads on page load.
+  - Corrupted / Malformed JSON string (`'{malformed-json'`) → Expected Result: Graceful recovery without errors, falls back to documented default theme (`'light'`).
+  - Unknown schema version (`{ version: 999, theme: 'neon' }`) → Expected Result: Falls back to documented default theme (`'light'`).
+- **Contribution Focus**: Add a worked explanation from input through intermediate state to output, and make the published example executable by the test.
 
 🎉 CONGRATULATIONS ! 🎉
 
