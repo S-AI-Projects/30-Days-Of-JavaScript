@@ -34,6 +34,8 @@
 		- [Exercises:Level 1](#exerciseslevel-1)
 		- [Exercises:Level 2](#exerciseslevel-2)
 		- [Exercises:Level 3](#exerciseslevel-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t040)](#applied-lab-r54-t040)
 
 # Day 13
 
@@ -352,6 +354,17 @@ The console.clear() cleans the browser console.
 ### Exercises:Level 3
 
 1. Check the speed difference among the following loops: while, for, for of, forEach
+
+## Added Activity
+
+### Applied Lab (r54-t040)
+
+- **Lab**: [Diagnostic Separation & Logger Injection Applied Lab](./applied-labs/r54-t040/README.md)
+- **Inputs & Expected Results**:
+  - Logger injected → Expected Result: Diagnostic event `{ type: 'DISCOUNT_EVALUATION', subtotal, qualifies, discount, total }` is emitted to logger spy.
+  - Logger disabled / omitted → Expected Result: Public calculation output remains strictly identical without emitting diagnostic events.
+  - Decisive threshold (`subtotal >= 100`) → Expected Result: Boundary test passes on correct implementation and fails on mutant (`subtotal > 100`).
+- **Contribution Focus**: Create a temporary one-line mutant of the decisive condition; add a focused test that passes on the correct example and fails on that mutant.
 
 🎉 CONGRATULATIONS ! 🎉
 
