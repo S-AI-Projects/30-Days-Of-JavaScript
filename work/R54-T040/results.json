@@ -1,0 +1,74 @@
+{
+  "taskId": "R54-T040",
+  "student": "Anushka Jaiswal",
+  "contributionFocus": "Create a temporary one-line mutant of the decisive condition; add a focused test that passes on the correct example and fails on that mutant.",
+  "timestamp": "2026-11-18T19:49:26.156Z",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "os": "Darwin 27.2.0"
+  },
+  "checks": [
+    {
+      "id": "logger_receives_event",
+      "description": "Logger spy receives structured event",
+      "input": 150,
+      "expected": 135,
+      "actual": 135,
+      "passed": true
+    },
+    {
+      "id": "parity_no_logger",
+      "description": "Omitting logger preserves identical result",
+      "input": 120,
+      "expected": {
+        "subtotal": 120,
+        "discount": 12,
+        "total": 108,
+        "qualifies": true
+      },
+      "actual": {
+        "subtotal": 120,
+        "discount": 12,
+        "total": 108,
+        "qualifies": true
+      },
+      "passed": true
+    },
+    {
+      "id": "parity_disabled_logger",
+      "description": "Disabling logger preserves identical result and emits 0 events",
+      "input": 120,
+      "expected": {
+        "subtotal": 120,
+        "discount": 12,
+        "total": 108,
+        "qualifies": true
+      },
+      "actual": {
+        "subtotal": 120,
+        "discount": 12,
+        "total": 108,
+        "qualifies": true
+      },
+      "passed": true
+    },
+    {
+      "id": "correct_boundary_test",
+      "description": "Correct example qualifies at boundary 100 (subtotal >= 100)",
+      "input": 100,
+      "expected": 90,
+      "actual": 90,
+      "passed": true
+    },
+    {
+      "id": "mutant_detected",
+      "description": "Decisive mutant (subtotal > 100) correctly fails boundary test",
+      "input": 100,
+      "expected": "AssertionError on mutant",
+      "actual": "Mutant failed assertion as expected",
+      "passed": true
+    }
+  ]
+}
