@@ -25,6 +25,8 @@
 		- [Exercises:Level 1](#exerciseslevel-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises:Level](#exerciseslevel)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t034)](#applied-lab-r54-t034)
 
 # Day 14
 
@@ -160,5 +162,17 @@ Practice
 Practice
 ### Exercises:Level
 Practice
+
+## Added Activity
+
+### Applied Lab (r54-t034)
+
+- **Lab**: [Exception Boundary & State Invariant Applied Lab](./applied-labs/r54-t034/README.md)
+- **Inputs & Expected Results**:
+  - Valid `{"count":2}` → Expected Result: `{ ok: true, data: { count: 2 }, countAdded: 2, totalCount: 2 }`
+  - Malformed JSON (`'{bad_json'`) → Expected Result: `{ ok: false, error: 'JSON parse error' }` without mutating state.
+  - Programmer error (e.g. `TypeError`) → Expected Result: Unsuppressed; surfaces directly to caller while preserving state invariant.
+- **Contribution Focus**: State and test the invariant connecting input/state to output across a short sequence of operations.
+
 🎉 CONGRATULATIONS ! 🎉
 [<< Day 13](../13_Day_Console_object_methods/13_day_console_object_methods.md) | [Day 15>>](../15_Day_Classes/15_day_classes.md)
