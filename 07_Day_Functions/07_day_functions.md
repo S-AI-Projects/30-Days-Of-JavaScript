@@ -38,6 +38,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t036)](#applied-lab-r54-t036)
 
 # 📔 Day 7
 
@@ -702,6 +704,18 @@ It Will be covered in other section.
     ```
 
 1. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+## Added Activity
+
+### Applied Lab (r54-t036)
+
+- **Lab**: [Function Defaults & Responsibility Extraction Applied Lab](./applied-labs/r54-t036/README.md)
+- **Inputs & Expected Results**:
+  - `name="Ada", language="en"` → Expected Result: `"Hello, Ada!"`
+  - Omitted `language` (e.g. `name="Ada"`) → Expected Result: `"Hello, Ada!"`
+  - Blank name (e.g. `""`, `"   "`, `null`, `undefined`) → Expected Result: Rejects with `'Name cannot be blank'` error.
+- **Contribution Focus**: Start from a working version, capture its behavior and extract one clearly named responsibility without changing the contract.
+
 
 🎉 CONGRATULATIONS ! 🎉
 

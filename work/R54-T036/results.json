@@ -1,0 +1,142 @@
+{
+  "taskId": "R54-T036",
+  "student": "Anushka Jaiswal",
+  "contributionFocus": "Start from a working version, capture its behavior and extract one clearly named responsibility without changing the contract.",
+  "timestamp": "2026-11-18T19:13:08.564Z",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "os": "Darwin 27.2.0"
+  },
+  "checks": [
+    {
+      "id": "greet_ada_en",
+      "description": "Explicit name and language",
+      "input": {
+        "name": "Ada",
+        "language": "en"
+      },
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "greet_ada_default",
+      "description": "Omitted language uses default en",
+      "input": {
+        "name": "Ada"
+      },
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "greet_ada_undefined",
+      "description": "Explicit undefined language uses default en",
+      "input": {
+        "name": "Ada"
+      },
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "reject_empty_string",
+      "description": "Empty string rejected",
+      "input": {
+        "name": ""
+      },
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error thrown",
+      "passed": true
+    },
+    {
+      "id": "reject_whitespace",
+      "description": "Whitespace-only name rejected",
+      "input": {
+        "name": "   "
+      },
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error thrown",
+      "passed": true
+    },
+    {
+      "id": "reject_null",
+      "description": "Null name rejected",
+      "input": {
+        "name": null
+      },
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error thrown",
+      "passed": true
+    },
+    {
+      "id": "reject_undefined",
+      "description": "Undefined name rejected",
+      "input": {},
+      "expected": "Error: Name cannot be blank",
+      "actual": "Error thrown",
+      "passed": true
+    },
+    {
+      "id": "parity_Ada",
+      "description": "Parity check for Ada",
+      "input": {
+        "name": "Ada",
+        "language": "en"
+      },
+      "expected": "Hello, Ada!",
+      "actual": "Hello, Ada!",
+      "passed": true
+    },
+    {
+      "id": "parity_Grace",
+      "description": "Parity check for Grace",
+      "input": {
+        "name": "Grace"
+      },
+      "expected": "Hello, Grace!",
+      "actual": "Hello, Grace!",
+      "passed": true
+    },
+    {
+      "id": "parity_Alan",
+      "description": "Parity check for Alan",
+      "input": {
+        "name": "Alan",
+        "language": "fr"
+      },
+      "expected": "Bonjour, Alan!",
+      "actual": "Bonjour, Alan!",
+      "passed": true
+    },
+    {
+      "id": "parity_Margaret",
+      "description": "Parity check for Margaret",
+      "input": {
+        "name": "Margaret",
+        "language": "de"
+      },
+      "expected": "Hallo, Margaret!",
+      "actual": "Hallo, Margaret!",
+      "passed": true
+    },
+    {
+      "id": "helper_resolveSalutation",
+      "description": "Extracted resolveSalutation helper functions correctly",
+      "input": "es",
+      "expected": "¡Hola",
+      "actual": "¡Hola",
+      "passed": true
+    },
+    {
+      "id": "helper_validateName",
+      "description": "Extracted validateName trims string correctly",
+      "input": "  Ada  ",
+      "expected": "Ada",
+      "actual": "Ada",
+      "passed": true
+    }
+  ]
+}
