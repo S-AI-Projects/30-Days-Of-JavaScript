@@ -1,0 +1,72 @@
+{
+  "contributionFocus": "Add a worked explanation from input through intermediate state to output, and make the published example executable by the test.",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "playwright": "1.65.1",
+    "os": "Darwin 25.6.0 (arm64)",
+    "timestamp": "2026-11-18T10:32:29.717Z"
+  },
+  "summary": {
+    "totalTests": 7,
+    "passed": 7,
+    "failed": 0
+  },
+  "tests": [
+    {
+      "id": "default_theme_when_storage_empty",
+      "description": "Empty storage cleanly initializes with documented default theme \"light\"",
+      "input": "localStorage is empty (null)",
+      "expected": "Theme: light",
+      "actual": "Theme: light",
+      "passed": true
+    },
+    {
+      "id": "save_versioned_settings",
+      "description": "Saves versioned settings object {version: 1, theme: \"dark\"} to localStorage",
+      "input": "Select theme \"dark\"",
+      "expected": "{\"version\":1,\"theme\":\"dark\",\"fontSize\":\"medium\"}",
+      "actual": "{\"version\":1,\"theme\":\"dark\",\"fontSize\":\"medium\"}",
+      "passed": true
+    },
+    {
+      "id": "valid_stored_theme_reloads",
+      "description": "Valid stored theme successfully reloads on page refresh",
+      "input": "{\"version\":1,\"theme\":\"dark\",\"fontSize\":\"medium\"}",
+      "expected": "Theme: dark",
+      "actual": "Theme: dark",
+      "passed": true
+    },
+    {
+      "id": "malformed_json_fallback_to_defaults",
+      "description": "Malformed JSON in storage recovers gracefully and falls back to default theme \"light\"",
+      "input": "\"{malformed-json: broken\"",
+      "expected": "Theme: light (Fallback Applied: Malformed JSON)",
+      "actual": "Theme: light (Fallback Applied: Malformed JSON: Expected property name or '}' in JSON at position 1 (line 1 column 2))",
+      "passed": true
+    },
+    {
+      "id": "unknown_version_fallback_to_defaults",
+      "description": "Unknown schema version (version: 999) falls back to documented default theme \"light\"",
+      "input": "{\"version\":999,\"theme\":\"neon\"}",
+      "expected": "Theme: light (Fallback Applied: Unknown schema version)",
+      "actual": "Theme: light (Fallback Applied: Unknown schema version: 999)",
+      "passed": true
+    },
+    {
+      "id": "worked_explanation_pipeline_display",
+      "description": "Worked explanation connects input through intermediate state to output",
+      "input": "DOM inspection of #worked-explanation",
+      "expected": "Exhibits [1. Input], [2. Intermediate State], [3. Output] flow",
+      "actual": "All 3 pipeline stages rendered in explanation panel",
+      "passed": true
+    },
+    {
+      "id": "zero_runtime_errors",
+      "description": "Reject console errors and unhandled page exceptions",
+      "input": "Runtime page execution",
+      "expected": "0 console/page errors",
+      "actual": "0 console errors, 0 page errors",
+      "passed": true
+    }
+  ]
+}
