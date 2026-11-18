@@ -1,0 +1,150 @@
+{
+  "taskId": "R54-T037",
+  "student": "Anushka Jaiswal",
+  "contributionFocus": "Add a worked explanation from input through intermediate state to output, and make the published example executable by the test.",
+  "timestamp": "2026-11-18T18:55:27.052Z",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "platform": "darwin",
+    "arch": "arm64",
+    "os": "Darwin 27.2.0"
+  },
+  "checks": [
+    {
+      "id": "count_aaabbc",
+      "description": "Counts \"aaabbc\" correctly",
+      "input": "aaabbc",
+      "expected": [
+        {
+          "symbol": "a",
+          "count": 3
+        },
+        {
+          "symbol": "b",
+          "count": 2
+        },
+        {
+          "symbol": "c",
+          "count": 1
+        }
+      ],
+      "actual": [
+        {
+          "symbol": "a",
+          "count": 3
+        },
+        {
+          "symbol": "b",
+          "count": 2
+        },
+        {
+          "symbol": "c",
+          "count": 1
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "count_empty",
+      "description": "Empty string produces empty array",
+      "input": "",
+      "expected": [],
+      "actual": [],
+      "passed": true
+    },
+    {
+      "id": "count_single_repeat",
+      "description": "Single repeating character",
+      "input": "zzzz",
+      "expected": [
+        {
+          "symbol": "z",
+          "count": 4
+        }
+      ],
+      "actual": [
+        {
+          "symbol": "z",
+          "count": 4
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "count_alternating",
+      "description": "Alternating symbols",
+      "input": "abab",
+      "expected": [
+        {
+          "symbol": "a",
+          "count": 1
+        },
+        {
+          "symbol": "b",
+          "count": 1
+        },
+        {
+          "symbol": "a",
+          "count": 1
+        },
+        {
+          "symbol": "b",
+          "count": 1
+        }
+      ],
+      "actual": [
+        {
+          "symbol": "a",
+          "count": 1
+        },
+        {
+          "symbol": "b",
+          "count": 1
+        },
+        {
+          "symbol": "a",
+          "count": 1
+        },
+        {
+          "symbol": "b",
+          "count": 1
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "worked_explanation_trace",
+      "description": "Intermediate trace connects input to output",
+      "input": "aaabbc",
+      "expected": [
+        {
+          "symbol": "a",
+          "count": 3
+        },
+        {
+          "symbol": "b",
+          "count": 2
+        },
+        {
+          "symbol": "c",
+          "count": 1
+        }
+      ],
+      "actual": [
+        {
+          "symbol": "a",
+          "count": 3
+        },
+        {
+          "symbol": "b",
+          "count": 2
+        },
+        {
+          "symbol": "c",
+          "count": 1
+        }
+      ],
+      "passed": true
+    }
+  ]
+}

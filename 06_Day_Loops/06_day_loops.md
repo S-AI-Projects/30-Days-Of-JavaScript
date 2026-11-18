@@ -29,6 +29,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t037)](#applied-lab-r54-t037)
 
 # 📔 Day 6
 
@@ -478,6 +480,17 @@ for(let i = 0; i <= 5; i++){
 1. Extract all the countries containing only four characters from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
 1. Extract all the countries containing two or more words from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
 1. Reverse the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and capitalize each country and stored it as an array
+
+## Added Activity
+
+### Applied Lab (r54-t037)
+
+- **Lab**: [Consecutive Symbol Counting via Explicit Loops Applied Lab](./applied-labs/r54-t037/README.md)
+- **Inputs & Expected Results**:
+  - String `"aaabbc"` → Expected Result: `[{ symbol: "a", count: 3 }, { symbol: "b", count: 2 }, { symbol: "c", count: 1 }]`
+  - Empty String `""` → Expected Result: `[]`
+- **Contribution Focus**: Add a worked explanation from input through intermediate state to output, and make the published example executable by the test.
+
 
 🎉 CONGRATULATIONS ! 🎉
 
