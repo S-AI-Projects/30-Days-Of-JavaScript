@@ -23,6 +23,8 @@
 		- [Exercise: Level 1](#exercise-level-1)
 		- [Exercise: Level 2](#exercise-level-2)
 		- [Exercise: Level 3](#exercise-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t033)](#applied-lab-r54-t033)
 
 # Day 29
 
@@ -38,6 +40,17 @@
 ### Exercise: Level 2
 
 ### Exercise: Level 3
+
+## Added Activity
+
+### Applied Lab (r54-t033)
+
+- **Lab**: [Search & Numeric Sort Composition Applied Lab](./applied-labs/r54-t033/README.md)
+- **Inputs & Expected Results**:
+  - Filter `query="javascript"` with numeric sort `asc` → Expected Result: Matching records returned with numeric order guaranteed (numeric `2` precedes `10`).
+  - Query with descending sort → Expected Result: Records sorted in descending numeric order matching reference oracle.
+  - Independent reference comparison → Expected Result: UI matches oracle with zero console or page errors.
+- **Contribution Focus**: Provide a small independent expected-result table or simpler reference implementation for the defined behavior; compare against it.
 
 🎉 CONGRATULATIONS ! 🎉
 
