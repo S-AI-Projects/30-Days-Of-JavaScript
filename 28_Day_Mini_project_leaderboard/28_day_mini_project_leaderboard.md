@@ -21,6 +21,8 @@
 - [Day 28](#day-28)
   - [Exercises](#exercises)
     - [Exercise: Level 1](#exercise-level-1)
+  - [Added Activity](#added-activity)
+    - [Applied Lab (r54-t031)](#applied-lab-r54-t031)
 
 # Day 28
 
@@ -31,6 +33,16 @@
 1. Create the following using HTML, CSS, and JavaScript
 
 ![Slider](./../images/projects/dom_mini_project_leaderboard_day_8.1.gif)
+
+## Added Activity
+
+### Applied Lab (r54-t031)
+
+- **Lab**: [Local Chart Dashboard Applied Lab](./applied-labs/r54-t031/README.md)
+- **Inputs & Expected Results**:
+  - Switch `A` → `B` → `A`: updates values in place without duplicating `.chart-row` DOM nodes and restores original Series `A` values.
+  - Select `EMPTY`: displays explicit no-data message (`No data available for the selected series.`).
+- **Contribution Focus**: Implement the required behavior from the explicit contract; show the smallest useful complete example.
 
 🎉 CONGRATULATIONS ! 🎉
 
