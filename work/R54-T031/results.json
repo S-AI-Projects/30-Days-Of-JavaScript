@@ -1,0 +1,134 @@
+{
+  "task": "R54-T031",
+  "node": "v26.13.1",
+  "passed": true,
+  "checks": [
+    {
+      "id": "initial_series_a",
+      "description": "Initial Series A renders expected values",
+      "input": "Load page",
+      "expected": [
+        {
+          "label": "Alpha",
+          "value": "42"
+        },
+        {
+          "label": "Beta",
+          "value": "78"
+        },
+        {
+          "label": "Gamma",
+          "value": "55"
+        }
+      ],
+      "actual": [
+        {
+          "label": "Alpha",
+          "value": "42"
+        },
+        {
+          "label": "Beta",
+          "value": "78"
+        },
+        {
+          "label": "Gamma",
+          "value": "55"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "switch_to_series_b",
+      "description": "Switch A -> B updates values without duplicating DOM nodes",
+      "input": "Click Series B",
+      "expected": {
+        "count": 3,
+        "rows": [
+          {
+            "label": "Alpha",
+            "value": "65"
+          },
+          {
+            "label": "Beta",
+            "value": "30"
+          },
+          {
+            "label": "Gamma",
+            "value": "90"
+          }
+        ]
+      },
+      "actual": {
+        "count": 3,
+        "rows": [
+          {
+            "label": "Alpha",
+            "value": "65"
+          },
+          {
+            "label": "Beta",
+            "value": "30"
+          },
+          {
+            "label": "Gamma",
+            "value": "90"
+          }
+        ]
+      },
+      "passed": true
+    },
+    {
+      "id": "restore_series_a",
+      "description": "Switch A -> B -> A restores original Series A values",
+      "input": "Click Series A",
+      "expected": [
+        {
+          "label": "Alpha",
+          "value": "42"
+        },
+        {
+          "label": "Beta",
+          "value": "78"
+        },
+        {
+          "label": "Gamma",
+          "value": "55"
+        }
+      ],
+      "actual": [
+        {
+          "label": "Alpha",
+          "value": "42"
+        },
+        {
+          "label": "Beta",
+          "value": "78"
+        },
+        {
+          "label": "Gamma",
+          "value": "55"
+        }
+      ],
+      "passed": true
+    },
+    {
+      "id": "empty_series_message",
+      "description": "Empty data displays explicit no-data message",
+      "input": "Click Empty Series",
+      "expected": "Visible no-data message",
+      "actual": {
+        "visible": true,
+        "text": "No data available for the selected series."
+      },
+      "passed": true
+    },
+    {
+      "id": "zero_runtime_errors",
+      "description": "Zero console or page errors",
+      "input": "All interactions",
+      "expected": 0,
+      "actual": 0,
+      "passed": true
+    }
+  ]
+}
