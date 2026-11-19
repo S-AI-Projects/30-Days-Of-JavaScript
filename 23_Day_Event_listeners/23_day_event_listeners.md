@@ -31,6 +31,8 @@
 			- [keypress, keydow and keyup](#keypress-keydow-and-keyup)
 	- [Exercises](#exercises)
 		- [Exercise: Level 1](#exercise-level-1)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t035)](#applied-lab-r54-t035)
 
 # Day 22
 
@@ -326,6 +328,16 @@ We can access all the key numbers of the keyboard using different event listener
 1. Generating the keyboard code code using even listener. The image below.
 
 ![Keyboard key](./../images/projects/dom_min_project_keycode_day_3.2.gif)
+
+## Added Activity
+
+### Applied Lab (r54-t035)
+
+- **Lab**: [Event Lifecycle & Deterministic Fixture Applied Lab](./applied-labs/r54-t035/README.md)
+- **Inputs & Expected Results**:
+  - Single click / `Enter` key: increments counter once; remounting does not duplicate handlers; cleanup stops further updates.
+  - Run Isolated Fixtures: two independent runs with injected clock/events produce identical state (`AGREE`).
+- **Contribution Focus**: Inject time, storage, events or network where used; use repeatable local fixtures and show that two isolated runs agree.
 
 🎉 CONGRATULATIONS ! 🎉
 
