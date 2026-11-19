@@ -32,6 +32,8 @@
     - [Exercise: Level 1](#exercise-level-1)
     - [Exercise: Level 2](#exercise-level-2)
     - [Exercise: Level 3](#exercise-level-3)
+  - [Added Activity](#added-activity)
+    - [Applied Lab (r54-t039)](#applied-lab-r54-t039)
   - [Testimony](#testimony)
   - [Support](#support)
 
@@ -56,6 +58,17 @@
 ### Exercise: Level 3
 
 🌕 Your journey to greatness completed successfully. You reached high level of greatness. Now, you are much greater than ever before. I knew what it takes to reach to this level and you made to this point. You are a real hero. Now, it is time to celebrate your success with a friend or with a family. I am looking forward to seeing you in an other challenge.
+
+## Added Activity
+
+### Applied Lab (r54-t039)
+
+- **Lab**: [Capstone State Restoration & Input-Scale Applied Lab](./applied-labs/r54-t039/README.md)
+- **Inputs & Expected Results**:
+  - Add two tasks, complete one, reload, filter `Completed`: only the completed task appears.
+  - Corrupt `localStorage`: recovers gracefully with an empty board and warning banner.
+  - Bounded Scale Experiment (`N = 5, 20, 50`): passes correctness assertions and reports operation counts.
+- **Contribution Focus**: Check three bounded input sizes or repeated interaction counts; assert correctness and report operation counts or render/listener counts rather than imposing a speed threshold.
 
 ## Testimony
 
