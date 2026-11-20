@@ -29,6 +29,8 @@
 		- [Exercises: Level 1](#exercises-level-1)
 		- [Exercises: Level 2](#exercises-level-2)
 		- [Exercises: Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t030)](#applied-lab-r54-t030)
 
 # 📔 Day 6
 
@@ -478,6 +480,17 @@ for(let i = 0; i <= 5; i++){
 1. Extract all the countries containing only four characters from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
 1. Extract all the countries containing two or more words from the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and print it as array
 1. Reverse the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js) and capitalize each country and stored it as an array
+
+## Added Activity
+
+### Applied Lab (r54-t030)
+
+- **Lab**: [Consecutive Symbol Counter & Reference Comparison Lab](./applied-labs/r54-t030/README.md)
+- **Inputs & Expected Results**:
+  - `countConsecutiveSymbols("aaabbc")` → Expected Result: `[{ symbol: 'a', count: 3 }, { symbol: 'b', count: 2 }, { symbol: 'c', count: 1 }]`
+  - `countConsecutiveSymbols("")` → Expected Result: `[]`
+  - Reference Comparison → Expected Result: 100% agreement against independent expected-result table and regex reference implementation
+- **Contribution Focus**: Provide a small independent expected-result table or simpler reference implementation for the defined behavior; compare against it.
 
 🎉 CONGRATULATIONS ! 🎉
 
