@@ -1,0 +1,12 @@
+{
+  "name": "day-25-country-filter-lab",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node serve.mjs",
+    "test": "node check.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.65.1"
+  }
+}

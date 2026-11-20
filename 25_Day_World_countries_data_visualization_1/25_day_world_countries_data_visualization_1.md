@@ -34,6 +34,10 @@
 
 ![Bar Graph](./../images/projects/dom_min_project_bar_graph_day_5.1.png)
 
+## Added Activity: Country Name Filter
+
+In the [country name filter lab](./applied-labs/r54-t027/README.md), search the local India, Iceland, and Japan fixture. An empty query shows all three countries, while `ia` returns India only. Try a query with no matches, then enter `ia` to recover without restarting the example.
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 24](../24_Day_Project_soloar_system/24_day_project_soloar_system.md) | [Day 26 >>](../26_Day_World_countries_data_visualization_2/26_day_world_countries_data_visualization_2.md)
