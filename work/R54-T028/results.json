@@ -1,0 +1,55 @@
+{
+  "contributionFocus": "Create a temporary one-line mutant of the decisive condition; add a focused test that passes on the correct example and fails on that mutant.",
+  "toolVersions": {
+    "node": "v26.13.1",
+    "os": "Darwin 27.2.0 (arm64)",
+    "timestamp": "2026-11-20T14:48:48.098Z"
+  },
+  "summary": {
+    "totalTests": 5,
+    "passed": 5,
+    "failed": 0
+  },
+  "tests": [
+    {
+      "id": "T01-INDEPENDENT-INSTANCES-INCREMENT",
+      "description": "Incrementing instance A twice gives 2 while instance B remains 0",
+      "input": "new Counter() for A and B; a.increment() twice",
+      "expected": "a.count === 2 && b.count === 0",
+      "actual": "a.count = 2, b.count = 0",
+      "passed": true
+    },
+    {
+      "id": "T02-RESET-COUNTER-A",
+      "description": "Resetting Counter A sets count to 0 while Counter B remains 0",
+      "input": "a.increment() x2; a.reset()",
+      "expected": "a.count === 0 && b.count === 0",
+      "actual": "a.count = 0, b.count = 0",
+      "passed": true
+    },
+    {
+      "id": "T03-WORKFLOW-FIXTURE",
+      "description": "Workflow fixture asserts A=2, B=0 after increments, and A=0, B=0 after reset",
+      "input": "runCounterWorkflow(Counter)",
+      "expected": "aInc=2, bInc=0, aReset=0, bReset=0",
+      "actual": "aInc=2, bInc=0, aReset=0, bReset=0",
+      "passed": true
+    },
+    {
+      "id": "T04-DECISIVE-CONDITION-MUTANT",
+      "description": "Focused test passes on correct Counter (aReset=0) and fails on MutantCounter (aReset=2)",
+      "input": "runCounterWorkflow(Counter) vs runCounterWorkflow(MutantCounter)",
+      "expected": "Counter passes (aReset=0); MutantCounter fails assertion (aReset=2)",
+      "actual": "Counter: aReset=0 (PASS); Mutant: aReset=2 (FAILS condition as expected)",
+      "passed": true
+    },
+    {
+      "id": "T05-CUSTOM-INITIAL-VALUE-AND-STEP",
+      "description": "Counter supports custom initial value and step, resetting back to custom initial value",
+      "input": "new Counter(10); c.increment(5); c.reset()",
+      "expected": "Initial 10 -> increment(5) gives 15 -> reset() gives 10",
+      "actual": "count after reset = 10",
+      "passed": true
+    }
+  ]
+}

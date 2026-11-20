@@ -35,6 +35,8 @@
 		- [Exercises Level 1](#exercises-level-1)
 		- [Exercises Level 2](#exercises-level-2)
 		- [Exercises Level 3](#exercises-level-3)
+	- [Added Activity](#added-activity)
+		- [Applied Lab (r54-t028)](#applied-lab-r54-t028)
 
 # Day 15
 
@@ -709,6 +711,18 @@ Frequency Distribution: [(20.0, 26), (16.0, 27), (12.0, 32), (8.0, 37), (8.0, 34
 ```
 
 1. Create a class called PersonAccount. It has firstname, lastname, incomes, expenses properties and it has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance methods. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
+
+## Added Activity
+
+### Applied Lab (r54-t028)
+
+- **Lab**: [Class State & Regression-Focused Counter Lab](./applied-labs/r54-t028/README.md)
+- **Inputs & Expected Results**:
+  - Instantiate Counter A and B → Expected Result: `a.count === 0`, `b.count === 0`
+  - Increment A twice → Expected Result: `a.count === 2`, `b.count === 0` (independent instances)
+  - Reset A → Expected Result: `a.count === 0`, `b.count === 0`
+  - Decisive Condition Mutant → Expected Result: Focused regression test passes on `Counter` and fails on `MutantCounter`
+- **Contribution Focus**: Create a temporary one-line mutant of the decisive condition; add a focused test that passes on the correct example and fails on that mutant.
 
 🎉 CONGRATULATIONS ! 🎉
 
