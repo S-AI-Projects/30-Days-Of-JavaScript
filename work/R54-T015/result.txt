@@ -1,0 +1,22 @@
+Task: R54-T015
+Command: node --test 03_Day_Booleans_operators_date/applied-labs/r54-t015/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: five fixture cases in fixture.json (owner, other member, unauthenticated admin, authenticated admin, unauthenticated owner).
+Expected: true, false, false, true, false. Two isolated node processes return the same list.
+
+Actual output:
+✔ authenticated owner succeeds (0.554167ms)
+✔ authenticated user who is not owner or admin fails (0.038834ms)
+✔ unauthenticated admin fails (0.03025ms)
+✔ every fixture case matches the expected value (0.201ms)
+✔ two isolated runs agree (132.662166ms)
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 213.546167

@@ -631,3 +631,13 @@ console.log(`${date}/${month}/${year} ${hours}:${minutes}`) // 4/1/2020 0:56
    1. YYY-MM-DD HH:mm eg. 20120-01-02 07:05
 
 [<< Day 2](../02_Day_Data_types/02_day_data_types.md) | [Day 4 >>](../04_Day_Conditionals/04_day_conditionals.md)
+
+### Applied lab: edit permission rule (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: canEdit(user, post) for the five users in fixture.json.
+
+Expected result: an authenticated owner can edit, an authenticated user who is neither owner nor admin cannot, an unauthenticated admin cannot, and an authenticated admin can. Two separate runs of the fixture give the same answers.
+
+Code and tests: [applied-labs/r54-t015](./applied-labs/r54-t015)

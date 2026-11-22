@@ -1,0 +1,7 @@
+[
+  { "user": { "id": 1, "authenticated": true, "role": "member" }, "post": { "ownerId": 1 }, "expected": true },
+  { "user": { "id": 2, "authenticated": true, "role": "member" }, "post": { "ownerId": 1 }, "expected": false },
+  { "user": { "id": 3, "authenticated": false, "role": "admin" }, "post": { "ownerId": 1 }, "expected": false },
+  { "user": { "id": 3, "authenticated": true, "role": "admin" }, "post": { "ownerId": 1 }, "expected": true },
+  { "user": { "id": 1, "authenticated": false, "role": "member" }, "post": { "ownerId": 1 }, "expected": false }
+]
