@@ -1,0 +1,11 @@
+Task: R54-T014
+Command: node 20_Day_Writing_clean_codes/applied-labs/r54-t014/check.mjs
+Node: v26.13.1
+Playwright: 1.65.1
+
+Inputs and expected results:
+Input: format(1234.5) with en-US, then de-DE, then en-US again; a fresh de-DE formatter for comparison.
+Expected: 1,234.5 then 1.234,5 then 1,234.5; same as the fresh de-DE formatter; module exports only createFormatter; importing it leaves the DOM unchanged and makes no extra request.
+
+Actual output:
+formatter check passed
