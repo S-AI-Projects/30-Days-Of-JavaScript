@@ -372,6 +372,16 @@ isRaining
 1. Write a program which tells the number of days in a month, now consider leap year.
 
 
+### Applied lab: score classification refactor (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: classifyScore(39), classifyScore(40), classifyScore(74), classifyScore(75), classifyScore(-1) and classifyScore(101).
+
+Expected result: fail, pass, pass, distinction, then a RangeError for both out of range scores. The range check was extracted into assertValidScore() and the test compares the new version with the original one.
+
+Code and tests: [applied-labs/r54-t016](./applied-labs/r54-t016)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 3](../03_Day_Booleans_operators_date/03_booleans_operators_date.md) | [Day 5 >>](../05_Day_Arrays/05_day_arrays.md)
