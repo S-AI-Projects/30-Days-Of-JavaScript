@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Celsius to Fahrenheit</title>
+  </head>
+  <body>
+    <main>
+      <h1>Celsius to Fahrenheit</h1>
+      <form id="conversion-form" novalidate>
+        <label for="celsius">Temperature in Celsius</label>
+        <input id="celsius" name="celsius" type="number" step="any" aria-describedby="temperature-error">
+        <button type="submit">Convert</button>
+        <p id="temperature-error" role="alert" aria-live="assertive"></p>
+      </form>
+      <p id="result" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>

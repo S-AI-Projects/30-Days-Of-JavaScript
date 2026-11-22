@@ -32,6 +32,10 @@
 
 ![Solar System](./../images/projects/dom_min_project_solar_system_day_4.1.gif)
 
+### Added activity: Celsius to Fahrenheit
+
+Use the local [Celsius to Fahrenheit lab](./applied-labs/r54-t041/README.md). Enter `0`, `100`, or `-40` and convert; the expected results are `32°F`, `212°F`, and `-40°F`. Submit a blank value to hear an accessible validation error. This is an added activity, separate from the original numbered exercise.
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 23](../23_Day_Event_listeners/23_day_event_listeners.md) | [Day 25 >>](../25_Day_World_countries_data_visualization_1/25_day_world_countries_data_visualization_1.md)
