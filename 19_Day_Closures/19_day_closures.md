@@ -99,6 +99,16 @@ console.log(innerFuncs.minusOne)
 
 1. Create a personAccount out function. It has firstname, lastname, incomes, expenses  inner variables. It has totalIncome, totalExpense, accountInfo,addIncome, addExpense and accountBalance inner functions. Incomes is a set of incomes and its description and expenses is also a set of expenses and its description.
 
+### Applied lab: independent counters (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: create two counters with createCounter() and call increment() twice on the first one.
+
+Expected result: the first counter reads 2, the second reads 0, and no global variable holds the count.
+
+Code and check: [applied-labs/r54-t011](./applied-labs/r54-t011)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 18](../18_Day_Promises/18_day_promises.md) | [Day 20 >>](../20_Day_Writing_clean_codes/20_day_writing_clean_codes.md)
