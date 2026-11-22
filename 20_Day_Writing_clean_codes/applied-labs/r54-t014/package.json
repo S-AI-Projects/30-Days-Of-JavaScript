@@ -1,0 +1,8 @@
+{
+  "name": "r54-t014",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "playwright": "1.65.1"
+  }
+}

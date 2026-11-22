@@ -355,6 +355,16 @@ Whatever style guide you follow be consistent. Follow some programming paradigms
 
 🌕 You are tidy. Now, you knew how to write clean code, so anyone who know the English language can understand your code.  You are always progressing and you are a head of 20 steps to your way to greatness.
 
+### Applied lab: number formatter module (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: createFormatter('en-US').format(1234.5), then setLocale('de-DE') and format(1234.5), then setLocale('en-US') and format(1234.5) again.
+
+Expected result: 1,234.5, then 1.234,5, then 1,234.5 again. Importing the module changes nothing in the page and makes no network request. The invariant is that the output depends only on the value and the current locale.
+
+Code and check: [applied-labs/r54-t014](./applied-labs/r54-t014)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 19](../19_Day_Closuers/19_day_closures.md) | [Day 21 >>](../21_Day_DOM/21_day_dom.md)
