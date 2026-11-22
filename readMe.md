@@ -702,6 +702,16 @@ I am 25 years old.
 You are 30 years old.
 ```
 
+### Applied lab: numeric summary (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: summarize([2, 4, 6]), then summarize([]) and summarize([1, '2']), then arrays of 10, 100 and 1000 numbers.
+
+Expected result: { sum: 12, average: 4 }, then an error for the empty array and for the non-number item. For 10, 100 and 1000 numbers the sum and average are correct and the number of element reads equals the input size.
+
+Code and tests: [applied-labs/r54-t020](./applied-labs/r54-t020)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [Day 2 >>](./02_Day_Data_types/02_day_data_types.md)
