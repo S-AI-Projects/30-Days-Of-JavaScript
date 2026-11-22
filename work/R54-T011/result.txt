@@ -1,0 +1,11 @@
+Task: R54-T011
+Command: node 19_Day_Closures/applied-labs/r54-t011/check.mjs
+Node: v26.13.1
+Playwright: 1.65.1
+
+Inputs and expected results:
+Input: two counters from createCounter(), increment() called twice on the first.
+Expected: first.read() is 2, second.read() is 0, window has no count variable, no console or page errors.
+
+Actual output:
+counter check passed
