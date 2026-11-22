@@ -1,0 +1,20 @@
+Task: R54-T016
+Command: node --test 04_Day_Conditionals/applied-labs/r54-t016/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: scores 39, 40, 74, 75, 0, 100, -1, 101, NaN, '50', and every score from -5 to 105 in steps of 0.5.
+Expected: fail, pass, pass, distinction, fail, distinction, RangeError for the rest; the refactored function matches the original function for every score.
+
+Actual output:
+✔ boundary scores (0.246833ms)
+✔ scores outside 0 to 100 are rejected (0.135458ms)
+✔ refactored version behaves like the original for every score (0.380209ms)
+ℹ tests 3
+ℹ suites 0
+ℹ pass 3
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 80.051084
