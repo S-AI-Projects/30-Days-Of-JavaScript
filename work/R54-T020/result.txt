@@ -1,0 +1,25 @@
+Task: R54-T020
+Command: node --test ./applied-labs/r54-t020/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: [2, 4, 6]; []; [1, '2', 3]; [1, NaN]; arrays 1..10, 1..100, 1..1000 read through a counting Proxy.
+Expected: sum 12 and average 4; errors for the rejected inputs; correct sum and average for each size with element reads equal to the size (10, 100, 1000).
+
+Actual output:
+✔ [2, 4, 6] gives sum 12 and average 4 (0.429125ms)
+✔ empty array and non-number items are rejected (0.140125ms)
+✔ input of 10 numbers is correct and read once (0.347167ms)
+ℹ size 10: 10 element reads
+✔ input of 100 numbers is correct and read once (0.07825ms)
+ℹ size 100: 100 element reads
+✔ input of 1000 numbers is correct and read once (0.217ms)
+ℹ size 1000: 1000 element reads
+ℹ tests 5
+ℹ suites 0
+ℹ pass 5
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 81.311084
