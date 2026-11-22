@@ -1,0 +1,21 @@
+Task: R54-T019
+Command: node --test 11_Day_Destructuring_and_spreading/applied-labs/r54-t019/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: defaults { limit: 10, enabled: true }, overrides { limit: 0, enabled: false }; also { limit: 5 } and no overrides.
+Expected: { limit: 0, enabled: false }; { limit: 5, enabled: true }; defaults unchanged. The truthy-check mutant returns { limit: 10, enabled: true } and fails the same assertion.
+
+Actual output:
+✔ 0 and false overrides are preserved (0.41975ms)
+✔ the same check fails on the mutant (0.510375ms)
+✔ defaults fill in missing keys (0.295708ms)
+✔ inputs are not changed (0.052625ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 79.314125

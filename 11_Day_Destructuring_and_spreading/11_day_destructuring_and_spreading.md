@@ -693,6 +693,16 @@ const users = [
 
 ```
 
+### Applied lab: configuration merge (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: defaults { limit: 10, enabled: true } and overrides { limit: 0, enabled: false }.
+
+Expected result: { limit: 0, enabled: false }. Both falsy overrides are kept. A mutant that checks overrides[key] instead of overrides[key] !== undefined loses them, and the test catches that.
+
+Code and tests: [applied-labs/r54-t019](./applied-labs/r54-t019)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 10](../10_Day_Sets_and_Maps/10_day_Sets_and_Maps.md) | [Day 12 >>](../12_Day_Regular_expressions/12_day_regular_expressions.md)
