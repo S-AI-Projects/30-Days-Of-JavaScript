@@ -1,0 +1,21 @@
+Task: R54-T013
+Command: node --test 05_Day_Arrays/applied-labs/r54-t013/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: items pen/book/bag with ids 1, 2, 3; replaceById for ids 2, 1 and 9.
+Expected: only the matching record changes, the others keep their references, the original array is unchanged, id 9 leaves equal contents. Compared with an expected table and a loop based reference.
+
+Actual output:
+✔ results match the expected table and the reference version (0.479958ms)
+✔ original array and its values stay intact (0.04775ms)
+✔ other records keep their references (0.058917ms)
+✔ absent id gives equal contents in a new array (0.076875ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 80.225125

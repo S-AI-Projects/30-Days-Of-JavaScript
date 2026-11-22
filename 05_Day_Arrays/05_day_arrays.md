@@ -769,6 +769,16 @@ const webTechs = [
 1. Find the middle country(ies) in the [countries array](https://github.com/Asabeneh/30DaysOfJavaScript/tree/master/data/countries.js)
 2. Divide the countries array into two equal arrays if it is even.  If countries array is not even , one more country for the first half.
   
+### Applied lab: immutable array update (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: [{ id: 1, name: 'pen' }, { id: 2, name: 'book' }, { id: 3, name: 'bag' }] and replaceById(items, 2, { id: 2, name: 'notebook' }).
+
+Expected result: a new array where only the record with id 2 changed to notebook. The records for id 1 and 3 are the same objects as in the original array, and the original array still holds book. An id that is not in the array gives a new array with equal contents.
+
+Code and tests: [applied-labs/r54-t013](./applied-labs/r54-t013)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 4](../04_Day_Conditionals/04_day_Conditionals.md) | [Day 6 >>](../06_Day_Loops/06_day_loops.md)
