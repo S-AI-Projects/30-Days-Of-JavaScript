@@ -1,0 +1,11 @@
+Task: R54-T018
+Command: node 29_Day_Mini_project_animating_characters/applied-labs/r54-t018/check.mjs
+Node: v26.13.1
+Playwright: 1.65.1
+
+Inputs and expected results:
+Input: search box values AN, zzz, bee typed one after another on the same page.
+Expected: [Anaconda 2, Ant 10, Panther 30]; [] with message "No characters found"; [Bee 5] with no message. No console or page errors.
+
+Actual output:
+search and sort check passed

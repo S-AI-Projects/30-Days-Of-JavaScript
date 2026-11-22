@@ -39,6 +39,16 @@
 
 ### Exercise: Level 3
 
+### Applied lab: search and sort (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: type AN, then zzz, then bee into the search box without reloading the page.
+
+Expected result: AN shows Anaconda 2, Ant 10 and Panther 30, so speed 2 comes before 10. zzz shows the empty state "No characters found". bee then shows Bee 5 and the message is gone, so the page recovers on the next valid input.
+
+Code and check: [applied-labs/r54-t018](./applied-labs/r54-t018)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 28](../28_Day_Mini_project_leaderboard/28_day_mini_project_leaderboard.md) | [Day 30>>](../30_Day_Mini_project_final/30_day_mini_project_final.md)
