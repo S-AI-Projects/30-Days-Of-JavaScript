@@ -37,6 +37,10 @@
 
 # Day 30
 
+## Added activity: Versioned local task board
+
+Use the [local task-board lab](./applied-labs/r54-t049/README.md). Add two tasks, complete one, reload, and filter to Completed; only the completed task should appear. Corrupt saved JSON to see the board recover with a status message. This is an added activity, not an original numbered exercise.
+
 ## Exercises
 
 ### Exercise: Level 1
