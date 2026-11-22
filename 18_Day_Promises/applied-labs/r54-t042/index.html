@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Promise state transitions</title>
+  </head>
+  <body>
+    <main>
+      <h1>Load a local lesson</h1>
+      <form id="load-form" novalidate>
+        <label for="lesson">Lesson name</label>
+        <input id="lesson" name="lesson" autocomplete="off" aria-describedby="input-error">
+        <button type="submit">Load</button>
+        <button id="retry" type="button" hidden>Retry</button>
+        <p id="input-error" role="alert" aria-live="assertive"></p>
+      </form>
+      <section aria-labelledby="state-heading">
+        <h2 id="state-heading">State: <span id="state" aria-live="polite">idle</span></h2>
+        <p id="message"></p>
+        <ul id="data"></ul>
+      </section>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>

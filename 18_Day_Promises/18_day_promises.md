@@ -247,6 +247,10 @@ fetchData()
 
 🌕 You are real and you kept your promise and you reached to day 18. Keep your promise and settle the challenge with resolve. You are 18 steps ahead to your way to greatness. Now do some exercises for your brain and  muscles.
 
+## Added activity: Promise state transitions
+
+Try the [local state-transition lab](./applied-labs/r54-t042/README.md). A delayed injected loader moves from pending to ready with local data; a rejection displays an error and Retry recovers without a network request. A blank or whitespace-only lesson name is rejected before loading starts, while an empty result is still a successful `ready` state with an empty-state message. This added activity is separate from the original numbered exercises.
+
 ## Exercises
 
 ```js
