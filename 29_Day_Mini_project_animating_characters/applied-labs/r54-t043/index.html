@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Search and sort characters</title>
+  </head>
+  <body>
+    <main>
+      <h1>Search and sort characters</h1>
+      <label for="query">Search by name</label>
+      <input id="query" type="search" autocomplete="off">
+      <button id="sort" type="button" aria-pressed="false">Sort by score</button>
+      <p id="state" aria-live="polite"></p>
+      <ol id="results"></ol>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>

@@ -26,6 +26,10 @@
 
 # Day 29
 
+## Added activity: Search and sort composition
+
+Try the [search and sort lab](./applied-labs/r54-t043/README.md). Search for `MIRA`, then sort by score: scores `2` and `10` remain the same selected records and appear in numeric order. Sorting changes the order, not the membership of the filtered set. This is an added activity, separate from the original exercises.
+
 ## Exercises
 
 ### Exercise: Level 1
