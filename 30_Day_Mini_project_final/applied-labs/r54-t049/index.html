@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Local task board</title>
+  </head>
+  <body>
+    <main>
+      <h1>Local task board</h1>
+      <form id="task-form">
+        <label for="new-task">New task</label>
+        <input id="new-task" name="task" required>
+        <button type="submit">Add task</button>
+      </form>
+      <p id="storage-message" role="status" aria-live="polite"></p>
+      <fieldset>
+        <legend>Show tasks</legend>
+        <button type="button" data-filter="all" aria-pressed="true">All</button>
+        <button type="button" data-filter="active" aria-pressed="false">Active</button>
+        <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+      </fieldset>
+      <ul id="tasks" aria-live="polite"></ul>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>
