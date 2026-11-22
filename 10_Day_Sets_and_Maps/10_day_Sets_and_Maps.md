@@ -380,6 +380,10 @@ Norway Oslo
 
 🌕 You established a big milestone, you are unstoppable. Keep going! You have just completed day 10 challenges and you are 10 steps a head in to your way to greatness. Now do some exercises for your brain and for your muscle.
 
+## Added activity: Case-insensitive tag summary
+
+Try the [tag grouping lab](./applied-labs/r54-t050/README.md) with `['JS', 'js', 'Python']`. Expected counts are `js: 2` and `python: 1`, with two unique tags. This is an added activity, not an original numbered exercise.
+
 ## Exercises
 
 ### Exercises:Level 1
