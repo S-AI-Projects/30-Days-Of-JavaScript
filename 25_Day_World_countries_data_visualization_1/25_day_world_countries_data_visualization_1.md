@@ -24,6 +24,10 @@
 
 # Day 25
 
+## Added activity: Deterministic country filter
+
+Try the [country-filter lab](./applied-labs/r54-t044/README.md) with its fixed India/Iceland/Japan fixture. Query `ia` returns India (1 match); an empty query returns all three countries. This is an added activity, not an original numbered exercise.
+
 ## Exercises
 
 ### Exercise: Level 1
