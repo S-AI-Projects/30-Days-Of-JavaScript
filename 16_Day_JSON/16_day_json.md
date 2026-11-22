@@ -466,6 +466,10 @@ console.log(txt)
 
 🌕 You are extraordinary.  Now, you knew a light-weight data format which you may use to store data or to send it an HTTP server. You are 16 steps a head to your way to greatness. Now do some exercises for your brain and for your muscle.
 
+## Added activity: Schema-validated JSON round trip
+
+Try the [round-trip lab](./applied-labs/r54-t046/README.md) with `{ name: 'Ada', visits: 3, subscribed: true, nickname: null }`; each field retains its declared type after serialization and parsing. A BigInt field is rejected with a clear error. This is an added activity, separate from the original numbered exercises.
+
 ## Exercises
 
 ```js
