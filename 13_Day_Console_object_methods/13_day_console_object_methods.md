@@ -353,6 +353,16 @@ The console.clear() cleans the browser console.
 
 1. Check the speed difference among the following loops: while, for, for of, forEach
 
+### Applied lab: injected logger (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: sumItems([1, 2, 3], logger) with a spy logger, then the same call without a logger.
+
+Expected result: the spy receives { event: 'sumItems', count: 3, total: 6 } and both calls return 6. The boundary is the empty array: sumItems([]) returns 0 and logs count 0, while a value that is not an array throws a TypeError and logs nothing.
+
+Code and tests: [applied-labs/r54-t012](./applied-labs/r54-t012)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 12](../12_Day_Regular_expressions/12_day_regular_expressions.md) | [Day 14>>](../14_Day_Error_handling/14_day_error_handling.md)

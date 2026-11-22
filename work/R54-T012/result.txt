@@ -1,0 +1,21 @@
+Task: R54-T012
+Command: node --test 13_Day_Console_object_methods/applied-labs/r54-t012/example.test.mjs
+Node: v26.13.1
+
+Inputs and expected results:
+Input: sumItems([1, 2, 3], spy), sumItems([1, 2, 3]), sumItems([], spy), sumItems('123', spy).
+Expected: 6 with one logged event { event: 'sumItems', count: 3, total: 6 }; 6 without a logger; 0 with count 0 logged; TypeError and no event.
+
+Actual output:
+✔ logger spy receives a structured event (0.438041ms)
+✔ result is the same when logging is disabled (0.045958ms)
+✔ empty array is the lower boundary (0.03875ms)
+✔ input that is not an array throws and logs nothing (0.44925ms)
+ℹ tests 4
+ℹ suites 0
+ℹ pass 4
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 82.337375
