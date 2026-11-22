@@ -33,12 +33,12 @@ try {
   for (const [value, expected] of [['0', '0°C = 32°F'], ['100', '100°C = 212°F'], ['-40', '-40°C = -40°F']]) {
     await input.fill(value)
     await page.getByRole('button', { name: 'Convert' }).click()
-    await assert.equal(await page.getByRole('status').textContent(), expected)
+    await assert.equal(await page.getByLabel('Fahrenheit result').textContent(), expected)
   }
   await input.fill('')
   await page.getByRole('button', { name: 'Convert' }).click()
   await assert.equal(await page.getByRole('alert').textContent(), 'Enter a temperature in Celsius.')
-  await assert.equal(await page.getByRole('status').textContent(), '')
+  await assert.equal(await page.getByLabel('Fahrenheit result').textContent(), '')
   await assert.equal(await input.getAttribute('aria-invalid'), 'true')
   assert.deepEqual(errors, [])
   process.stdout.write('R54-T041: conversions and blank-input accessibility passed.\n')

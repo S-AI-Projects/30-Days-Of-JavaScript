@@ -14,7 +14,9 @@
         <button type="submit">Convert</button>
         <p id="temperature-error" role="alert" aria-live="assertive"></p>
       </form>
-      <p id="result" role="status" aria-live="polite"></p>
+      <p><label for="result">Fahrenheit result</label>
+        <output id="result" name="fahrenheit" for="celsius" role="status" aria-live="polite"></output>
+      </p>
     </main>
     <script type="module" src="./example.js"></script>
   </body>
