@@ -24,6 +24,10 @@
 
 # Day 25
 
+## Added activity: Worked country-filter example
+
+Follow the [worked example](./applied-labs/r54-t047/README.md): query `ia` is normalized to lowercase, India matches while Iceland and Japan do not, and the result count is 1. An empty query returns all three fixture countries. This added activity is separate from the original exercises.
+
 ## Exercises
 
 ### Exercise: Level 1
