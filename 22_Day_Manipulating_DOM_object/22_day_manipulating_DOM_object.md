@@ -226,6 +226,16 @@ Check the requirement of this project from both images(jpg and gif). All the dat
 
 ![Challenge Information](./../images/projects/dom_mini_project_challenge_info_day_2.3.png)
 
+### Applied lab: keyed DOM updates (added activity)
+
+This is an added activity, not one of the original numbered exercises.
+
+Input: add records A and B by id, add A again, then remove A, then remove an id that does not exist.
+
+Worked through: after the two adds the list shows A and B. Adding A again keeps A and B because the element for that id is reused. After removing A the list shows exactly B. Removing the missing id does not throw and the list still shows B.
+
+Code and check: [applied-labs/r54-t017](./applied-labs/r54-t017)
+
 🎉 CONGRATULATIONS ! 🎉
 
 [<< Day 21](../21_Day_DOM/21_day_dom.md) | [Day 23 >>](../23_Day_Event_listeners/23_day_event_listeners.md)
