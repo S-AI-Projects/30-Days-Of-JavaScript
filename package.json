@@ -1,0 +1,8 @@
+{
+  "name": "30-days-of-javascript-applied-labs",
+  "private": true,
+  "packageManager": "pnpm@11.25.0",
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

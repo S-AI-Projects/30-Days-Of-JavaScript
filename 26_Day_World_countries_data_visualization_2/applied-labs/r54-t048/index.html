@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rendered frequency chart</title>
+    <style>
+      body { font-family: system-ui, sans-serif; max-width: 42rem; margin: 2rem auto; padding: 0 1rem; }
+      #chart { display: grid; gap: 0.5rem; margin: 1rem 0; }
+      .bar-row { display: grid; grid-template-columns: 2rem 1fr; align-items: center; gap: 0.5rem; }
+      .bar { display: block; min-width: 0.25rem; width: var(--bar-width); height: 1.5rem; background: #2769aa; color: white; padding-left: 0.35rem; }
+      th, td { padding: 0.4rem 1rem; text-align: left; }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Rendered frequency chart</h1>
+      <section aria-labelledby="chart-title">
+        <h2 id="chart-title">Frequency by category</h2>
+        <div id="chart" role="img" aria-label="Frequency chart: A 3, B 1, C 2"></div>
+        <table>
+          <caption>Accessible chart values</caption>
+          <thead><tr><th scope="col">Category</th><th scope="col">Count</th></tr></thead>
+          <tbody id="values"></tbody>
+        </table>
+      </section>
+      <button id="render-again" type="button">Render chart again</button>
+      <p id="stats" role="status" aria-live="polite"></p>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>

@@ -24,6 +24,10 @@
 
 # Day 26
 
+## Added activity: Rendered frequency chart
+
+Use the [frequency-chart lab](./applied-labs/r54-t048/README.md). A=3, B=1, C=2 yields relative bar widths of 100%, one third, and two thirds, with the same values in an accessible table. The check repeats rendering 1, 3, and 5 times and reports operation counts. This is an added activity, not an original numbered exercise.
+
 ## Exercises
 
 ### Exercise: Level 1
