@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Recover from a failed request</title>
+  </head>
+  <body>
+    <main>
+      <h1>Recover from a failed request</h1>
+      <form id="load-form" novalidate>
+        <label for="topic">Topic</label>
+        <input id="topic" name="topic" aria-describedby="input-error">
+        <button type="submit">Load topic</button>
+        <p id="input-error" role="alert" aria-live="assertive"></p>
+      </form>
+      <p id="state" aria-live="polite">idle</p>
+      <p id="message" role="status" aria-live="polite"></p>
+      <ul id="result"></ul>
+    </main>
+    <script type="module" src="./example.js"></script>
+  </body>
+</html>
