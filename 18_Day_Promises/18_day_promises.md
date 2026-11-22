@@ -31,6 +31,10 @@
 
 # Day 18
 
+## Added activity: Failure and recovery
+
+Use the [failure-and-recovery lab](./applied-labs/r54-t045/README.md). Submit `fail` to display an error, then enter `promises` and submit again; the same session reaches `ready` with local fixture data. This added activity is separate from the original numbered exercises.
+
 ## Promise
 
 We human give or receive a promise to do some activity at some point in time. If we keep the promise we make others happy but if we do not keep the promise, it may lead discontentment. Promise in JavaScript has something in common with the above examples.
