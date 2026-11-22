@@ -7,7 +7,7 @@ import { chromium } from 'playwright'
 import { characters, selectCharacters } from './logic.mjs'
 
 const folder = fileURLToPath(new URL('.', import.meta.url))
-const mimeTypes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8' }
+const mimeTypes = { '.html': 'text/html; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.mjs': 'text/javascript; charset=utf-8' }
 const server = createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, 'http://localhost').pathname)
