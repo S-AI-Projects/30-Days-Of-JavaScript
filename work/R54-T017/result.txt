@@ -1,0 +1,11 @@
+Task: R54-T017
+Command: node 22_Day_Manipulating_DOM_object/applied-labs/r54-t017/check.mjs
+Node: v26.13.1
+Playwright: 1.65.1
+
+Inputs and expected results:
+Input: add a/A, add b/B, add a/A again, remove a, remove missing.
+Expected: [A, B], [A, B], [B], no exception, [B]. No console or page errors.
+
+Actual output:
+keyed list check passed
